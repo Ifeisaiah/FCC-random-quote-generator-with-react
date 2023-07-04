@@ -1,0 +1,107 @@
+*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* {
+  vertical-align: baseline;
+}
+body {
+  background-color: gray;
+}
+html, body {
+  font-size: 20px;
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+#quote-app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#quote-box {
+  width: 100%;
+ /* position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50% , -50%);  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1 {
+  color: whitesmoke;
+}
+.display-quote {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color:  whitesmoke;
+  border-radius: 5px;
+  width: 50%;
+  height: 180px;
+}
+#text {
+  margin: 20px auto; 
+}
+#author {
+  margin-top: 10px;
+  font-size: 18px;
+  color: gray;
+}
+#quote-box {
+  padding: 20px;
+ 
+}
+.quote-btns {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 10px;
+  margin-top: 16px;
+  border-radius: 5px;
+  width: 50%;
+}
+#new-quote {
+  font-size: 18px;
+}
+.btn {
+  padding: 10px;
+  background-color: gray;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+.error {
+  font-size: 18px;
+  color: rgb(160, 20, 20);
+
+}
+i{
+  margin-left: 0.3em
+}
+
+@media (max-width: 600px) {
+  .h1 {
+    font-size: 25px;
+  }
+  .quote-btns, .display-quote {
+    width: 90%;
+  }
+  .display-quote {
+    height: 230px;
+  }
+}
